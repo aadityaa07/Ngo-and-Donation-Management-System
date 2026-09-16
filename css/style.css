@@ -22,7 +22,7 @@ ul {
 
 /* ================= NAVBAR ================= */
 .navbar {
-  background-color: #7ccaf7; /* deep green - NGO/trust feel */
+  background-color: #7ccaf7;
   padding: 15px 0;
 }
 
@@ -52,7 +52,7 @@ ul {
 }
 
 .nav-links a:hover {
-  color: #fffefc; /* accent yellow on hover */
+  color: #fffefc;
 }
 
 /* ================= HERO ================= */
@@ -159,6 +159,118 @@ ul {
   margin-top: 30px;
   font-size: 13px;
   color: #1b1919;
+}
+
+/* ================= FORMS (login, register, donate, contact) ================= */
+.form-section {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.form-box {
+  background-color: #eaf8fd;
+  border: 1px solid #b3e5fc;
+  border-radius: 10px;
+  padding: 40px;
+  width: 100%;
+  max-width: 420px;
+}
+
+.form-box h2 {
+  color: #0c0c0c;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-box label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #1c1a1a;
+}
+
+.form-box input,
+.form-box select,
+.form-box textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 18px;
+  border: 1px solid #9bd8f0;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.form-box button {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.form-footer-text {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+/* ================= CAUSES GRID ================= */
+.causes-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 0 20px 60px 20px;
+}
+
+.cause-card {
+  background-color: #eaf8fd;
+  border: 1px solid #b3e5fc;
+  border-radius: 10px;
+  padding: 25px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.cause-card h3 {
+  color: #0c0c0c;
+  margin-bottom: 10px;
+}
+
+.cause-card p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #444;
+}
+
+/* ================= ADMIN DASHBOARD TABLE ================= */
+.dashboard-table-wrap {
+  padding: 0 20px 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+  border: 1px solid #b3e5fc;
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.dashboard-table th {
+  background-color: #64ccfc;
+  color: #101010;
+}
+
+.dashboard-table tr:nth-child(even) {
+  background-color: #eaf8fd;
 }
 
 /* ================= RESPONSIVE ================= */
