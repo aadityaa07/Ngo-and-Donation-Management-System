@@ -3,86 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | Hope Foundation NGO</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Home | NGO and Donation Management System</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- NAVBAR (reuse this exact block on every page)-->
-  <header class="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="logo">Hope Foundation</a>
-      <nav>
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="logo" href="index.html">CareConnect</a>
+      <nav aria-label="Main navigation">
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="pages/about.html">About</a></li>
-          <li><a href="pages/causes.html">Causes</a></li>
-          <li><a href="pages/donate.html">Donate</a></li>
-          <li><a href="pages/contact.html">Contact</a></li>
-          <li><a href="pages/login.html">Login</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="causes.html">Causes</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="admin.html">Admin</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- HERO SECTION  -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Together, We Can Change Lives</h1>
-      <p>Your support helps us provide education, food, and shelter to those who need it most.</p>
-      <a href="pages/donate.html" class="btn-primary">Donate Now</a>
-    </div>
-  </section>
-
-  <!-- ===== MISSION SECTION ===== -->
-  <section class="mission">
-    <h2>Our Mission</h2>
-    <p>
-      Hope Foundation is dedicated to empowering underprivileged communities through
-      education, healthcare, and sustainable development programs. Every donation,
-      big or small, brings us one step closer to a better tomorrow.
-    </p>
-  </section>
-
-  <!-- ===== IMPACT / STATS SECTION ===== -->
-  <section class="impact">
-    <div class="impact-box">
-      <h3>1,200+</h3>
-      <p>Families Supported</p>
-    </div>
-    <div class="impact-box">
-      <h3>50+</h3>
-      <p>Active Volunteers</p>
-    </div>
-    <div class="impact-box">
-      <h3>15</h3>
-      <p>Ongoing Projects</p>
-    </div>
-  </section>
-
-  <!-- ===== FOOTER (reuse this exact block on every page) ===== -->
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-col">
-        <h3>Hope Foundation</h3>
-        <p>Making a difference, one donation at a time.</p>
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <span class="hero-label">NGO & Donation Management System</span>
+        <h1>Small contributions can create meaningful change.</h1>
+        <p>
+          CareConnect brings causes, donation forms, donor information, and
+          basic administrative records together in one simple interface.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="causes.html">Explore Causes</a>
+          <a class="btn btn-secondary" href="donate.html">Donate Now</a>
+        </div>
       </div>
-      <div class="footer-col">
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading text-center">
+          <h2>What the system provides</h2>
+          <p>A clear and responsive frontend prototype for NGO donation management.</p>
+        </div>
+
+        <div class="info-grid">
+          <article class="info-card">
+            <div class="info-icon" aria-hidden="true">♥</div>
+            <h3>Explore Causes</h3>
+            <p>Browse different causes and understand where donations can be directed.</p>
+          </article>
+
+          <article class="info-card">
+            <div class="info-icon" aria-hidden="true">₹</div>
+            <h3>Simple Donations</h3>
+            <p>Enter donor details, choose a cause, and select a payment method.</p>
+          </article>
+
+          <article class="info-card">
+            <div class="info-icon" aria-hidden="true">▣</div>
+            <h3>Admin Overview</h3>
+            <p>View sample donation records and basic financial information in one place.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cta">
+      <div class="container text-center">
+        <div class="section-heading">
+          <h2>Support a cause</h2>
+          <p>Browse the available causes and use the donation page to submit a sample donation.</p>
+        </div>
+        <a class="btn btn-primary" href="donate.html">Make a Donation</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <h3>CareConnect</h3>
+        <p>NGO and Donation Management System</p>
+      </div>
+      <div>
         <h3>Quick Links</h3>
-        <ul>
+        <ul class="footer-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="pages/about.html">About Us</a></li>
-          <li><a href="pages/donate.html">Donate</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="causes.html">Causes</a></li>
+          <li><a href="donate.html">Donate</a></li>
         </ul>
       </div>
-      <div class="footer-col">
-        <h3>Contact</h3>
-        <p>Email: contact@hopefoundation.org</p>
-        <p>Phone: +91 XXXXX XXXXX</p>
-      </div>
     </div>
-    <p class="footer-bottom">&copy; 2026 Hope Foundation. All rights reserved.</p>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 CareConnect. Frontend prototype.</p>
+    </div>
   </footer>
-
 </body>
 </html>
