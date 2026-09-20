@@ -395,6 +395,19 @@ a {
   border-bottom: none;
 }
 
+.team-members {
+  margin-top: 16px;
+  line-height: 1.9;
+  font-size: 1rem;
+  color: var(--text);
+  background: var(--white);
+  padding: 16px 20px;
+  border-radius: 12px;
+  border-left: 4px solid var(--primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  text-align: left;
+}
+
 /* Responsive layout */
 @media (max-width: 750px) {
   .navbar,
