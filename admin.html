@@ -16,99 +16,26 @@
           <li><a href="about.html">About</a></li>
           <li><a href="causes.html">Causes</a></li>
           <li><a href="donate.html">Donate</a></li>
+          <li><a href="contact.html">Contact</a></li>
           <li><a href="login.html">Login</a></li>
-          <li><a href="admin.html">Admin</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="section">
-    <div class="container">
-      <div class="section-heading">
-        <h1>Admin Dashboard</h1>
-        <p>Static sample data for demonstrating the administrative view.</p>
+  <main>
+    <section class="page-header"><div class="container"><h1>Admin Dashboard</h1><p>All saved donations.</p></div></section>
+    <section class="section"><div class="container">
+      <div class="summary-grid">
+        <div class="summary-card">Total Raised<strong id="adminTotal">₹0</strong></div>
+        <div class="summary-card">Donations Received<strong id="adminCount">0</strong></div>
       </div>
-
-      <section class="summary-grid" aria-label="Donation summary">
-        <article class="summary-card">
-          <p>Total Donations</p>
-          <strong>3</strong>
-        </article>
-
-        <article class="summary-card">
-          <p>Funds Tracked</p>
-          <strong>₹3,500</strong>
-        </article>
-
-        <article class="summary-card">
-          <p>Active Causes</p>
-          <strong>3</strong>
-        </article>
-      </section>
-
-      <section>
-        <div class="section-heading">
-          <h2>Recent Donations</h2>
-        </div>
-
-        <div class="table-wrapper">
-          <table class="dashboard-table">
-            <thead>
-              <tr>
-                <th>Donor Name</th>
-                <th>Cause</th>
-                <th>Amount</th>
-                <th>Date</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Riya Sharma</td>
-                <td>Education</td>
-                <td>₹1,000</td>
-                <td>10 Sep 2026</td>
-              </tr>
-              <tr>
-                <td>Aman Verma</td>
-                <td>Healthcare</td>
-                <td>₹500</td>
-                <td>12 Sep 2026</td>
-              </tr>
-              <tr>
-                <td>Priya Nair</td>
-                <td>Food and Shelter</td>
-                <td>₹2,000</td>
-                <td>14 Sep 2026</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="section-heading">
-          <h2>Admin Functions Planned</h2>
-        </div>
-
-        <div class="info-grid">
-          <article class="info-card">
-            <h3>Campaign Management</h3>
-            <p>Create and update campaign information when backend support is added.</p>
-          </article>
-
-          <article class="info-card">
-            <h3>Donation Tracking</h3>
-            <p>Maintain donor records and track funds associated with different causes.</p>
-          </article>
-
-          <article class="info-card">
-            <h3>Financial Reports</h3>
-            <p>Generate useful summaries and reports from stored donation data in future versions.</p>
-          </article>
-        </div>
-      </section>
-    </div>
+      <div class="table-wrapper"><table class="dashboard-table">
+        <thead><tr><th>Donor</th><th>Cause</th><th>Amount</th><th>Method</th><th>Date</th><th>Action</th></tr></thead>
+        <tbody id="donationRows"></tbody>
+      </table></div>
+      <p style="margin-top:20px"><button class="btn btn-secondary" id="logoutButton">Logout</button></p>
+    </div></section>
   </main>
 
   <footer class="site-footer">
@@ -121,15 +48,18 @@
         <h3>Quick Links</h3>
         <ul class="footer-links">
           <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="causes.html">Causes</a></li>
           <li><a href="donate.html">Donate</a></li>
-          <li><a href="login.html">Login</a></li>
+          <li><a href="admin-login.html">Admin Login</a></li>
         </ul>
       </div>
     </div>
-    <div class="container">
+    <div class="container footer-bottom">
       <p>&copy; 2026 CareConnect. Frontend prototype.</p>
     </div>
   </footer>
+  <script src="js/api.js"></script>
+  <script src="js/admin.js"></script>
 </body>
 </html>

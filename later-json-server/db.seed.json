@@ -1,0 +1,16 @@
+{
+  "causes": [
+    { "id": "education",  "name": "Education for Children", "description": "School supplies, books and tuition support.", "goal": 100000 },
+    { "id": "healthcare", "name": "Healthcare Support",     "description": "Medical camps and essential medicines.",      "goal": 150000 },
+    { "id": "food",       "name": "Food & Shelter",         "description": "Meals and shelter kits for families.",        "goal": 80000 }
+  ],
+  "donations": [
+    { "id": 1, "name": "Riya Sharma", "email": "riya@example.com",  "amount": 5000, "causeId": "education",  "method": "UPI",  "date": "10/9/2026" },
+    { "id": 2, "name": "Aman Verma",  "email": "aman@example.com",  "amount": 2500, "causeId": "healthcare", "method": "Card", "date": "12/9/2026" },
+    { "id": 3, "name": "Priya Nair",  "email": "priya@example.com", "amount": 4000, "causeId": "food",       "method": "UPI",  "date": "14/9/2026" }
+  ],
+  "users": [
+    { "id": 1, "name": "Admin", "email": "admin@careconnect.org", "password": "admin123", "role": "admin" }
+  ],
+  "messages": []
+}

@@ -395,19 +395,6 @@ a {
   border-bottom: none;
 }
 
-.team-members {
-  margin-top: 16px;
-  line-height: 1.9;
-  font-size: 1rem;
-  color: var(--text);
-  background: var(--white);
-  padding: 16px 20px;
-  border-radius: 12px;
-  border-left: 4px solid var(--primary);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-  text-align: left;
-}
-
 /* Responsive layout */
 @media (max-width: 750px) {
   .navbar,
@@ -444,3 +431,16 @@ a {
     padding: 24px;
   }
 }
+
+/* Donation tracking */
+.progress-bar { height: 10px; margin-top: 16px; background: #e4f5f1; border-radius: 999px; overflow: hidden; }
+.progress-fill { height: 100%; width: 0; background: var(--primary); transition: width 0.8s ease; }
+.progress-text { margin-top: 8px; font-size: 0.9rem; color: var(--muted); }
+.form-message { margin-top: 15px; padding: 11px 14px; border-radius: 7px; background: #e4f5f1; color: var(--primary-dark); font-weight: bold; }
+.form-message.error { background: #fdecea; color: #b3261e; }
+.form-message:empty { display: none; }
+.amount-presets { display: flex; gap: 8px; margin-bottom: 18px; }
+.amount-presets button { padding: 8px 14px; border: 1px solid var(--primary); border-radius: 7px; background: var(--white); color: var(--primary); font-weight: bold; cursor: pointer; }
+
+.delete-btn { padding: 5px 10px; border: 1px solid #b3261e; border-radius: 6px; background: #fff; color: #b3261e; cursor: pointer; }
+.delete-btn:hover { background: #fdecea; }
